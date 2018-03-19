@@ -2,23 +2,23 @@
 #include<string.h>
 int main()
 {
-    char a[20];
+    char str[20];
     int i,j,t,b;
-    scanf("%s",a);
-    b=strlen(a);
+    scanf("%s",str);
+    b=strlen(str);
     for(i=0;i<b;i++)
     {
         for(j=i;j<b;j++)
-        {   if(a[i]>a[j])
+        {   if(str[i]>str[j])
             {
-            t=a[i];
-            a[i]=a[j];
-            a[j]=t;
+            t=str[i];
+            str[i]=str[j];
+            str[j]=t;
             }
         }
     }
     for(i=0;i<b;i++)
     {
-        printf("%c",a[i]);
+        printf("%c",str[i]);
     }
 }
