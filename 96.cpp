@@ -11,7 +11,7 @@ int main()
     count++;
   }
   if(count==1 || count==2)
-  cout<<" Prime ";
+  cout<<" No ";
   else
-  cout<<" Composite ";
+  cout<<" Yes ";
 }
